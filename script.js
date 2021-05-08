@@ -455,7 +455,7 @@ function paintDom(obj, role, parentkey) {
         "afterend",
         `<div class="flex w-11/12 rounded-2xl bg-primary-450 h-auto bg-opacity-50 p-3 mb-4 justify-between items-center" data-entrySub="${obj.key}" id="entrySub">
                 <img src="checked.svg" alt="checked" class="cursor-pointer w-6 h-6 mr-2" data-entryUncheckedSub="${obj.key}" id="checkBtnSub" data-parentkey="${parentkey}">
-                <input id="textSub-${obj.key}" data-textSub="${obj.key}" data-parentkey="${parentkey}" class="h-7 p-2 text-white text-opacity-75 text-xl w-full bg-transparent cursor-pointer focus:outline-none" value="${obj.value}">
+                <input id="textSub-${obj.key}" data-textSub="${obj.key}" data-parentkey="${parentkey}" class="h-7 line-through1 p-2 text-white text-opacity-75 text-xl w-full bg-transparent cursor-pointer focus:outline-none" value="${obj.value}">
                 <img src="trash.svg" alt="trash" data-parentkey="${parentkey}" class="cursor-pointer w-6 h-6 mr-2 ml-2 text-pink-400 transform hover:-rotate-12" id="trashBtnSub" data-entryTrashSub="${obj.key}">
             </div>`
       );
